@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mingyu Portfolio — Frontend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ───────────── NAVBAR ───────────── -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle-input" />
+    <header class="navbar">
+      <div class="nav-inner">
+        <a href="#hero" class="nav-logo">MG<span>.</span></a>
+        <nav class="nav-links">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#career" class="nav-link">Career</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#activities" class="nav-link">Experience</a>
+          <a href="#awards" class="nav-link">Awards</a>
+        </nav>
+        <label for="menu-toggle" class="hamburger" aria-label="메뉴 열기">
+          <span></span><span></span><span></span>
+        </label>
+      </div>
+      <div class="progress-bar-wrap">
+        <div class="progress-bar"></div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#career" class="mobile-link">Career</a>
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#activities" class="mobile-link">Experience</a>
+      <a href="#awards" class="mobile-link">Awards</a>
+    </div>
+
+    <main>
+      <!-- ───────────── HERO ───────────── -->
+      <section id="hero" class="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-glow"></div>
+        <div class="hero-content">
+          <p class="hero-greeting">안녕하세요, 저는</p>
+          <h1 class="hero-name">임민규<span class="accent-dot">.</span></h1>
+          <p class="hero-title">
+            <span class="title-bar"></span>
+            Frontend Developer
+          </p>
+          <p class="hero-desc">
+            사용자 중심의 인터랙티브한 웹 인터페이스를 설계하고 구현하는
+            프론트엔드 개발자입니다.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn-primary">프로젝트 보기</a>
+            <a href="#about" class="btn-secondary">소개 보기</a>
+          </div>
+          <div class="hero-social">
+            <a
+              href="https://github.com/nile27"
+              target="_blank"
+              class="social-link"
+              aria-label="GitHub"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <!-- <a href="#" class="social-link" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a> -->
+            <a
+              href="mailto:ddj03104@gmail.com"
+              class="social-link"
+              aria-label="Email"
+            >
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+        <a href="#about" class="hero-scroll-hint" aria-label="아래로 스크롤">
+          <span class="scroll-text">Scroll</span>
+          <div class="scroll-mouse">
+            <div class="scroll-dot"></div>
+          </div>
+        </a>
+      </section>
+
+      <!-- ───────────── ABOUT ───────────── -->
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-num">01</span>
+            <h2 class="section-title">About Me</h2>
+          </div>
+
+          <!--
+          ┌──────────────┬──────────────────────────┐
+          │   사진       │   짧은 자기소개          │
+          ├──────────────┼──────────────────────────┤
+          │   내 정보    │   기술 스택              │
+          └──────────────┴──────────────────────────┘
+        -->
+          <div class="about-grid">
+            <!-- [상단-좌] 사진 -->
+            <div class="about-photo-wrap">
+              <div class="about-photo">
+                <img src="profile_img.jpeg" alt="임민규 프로필 사진" />
+                <!-- <div class="photo-placeholder">
+                  <i class="fa-solid fa-user"></i>
+                  <span>photo.jpg</span>
+                </div> -->
+              </div>
+            </div>
+
+            <!-- [상단-우] 짧은 자기소개 -->
+            <div class="about-intro">
+              <p class="about-lead">이런 개발자를 지향합니다</p>
+              <p class="about-body">
+                사용자의 불편을 해소하는 데서 서비스 개발이 시작된다고 믿습니다.
+                특히 웹 프론트엔드는 사용자가 처음 마주하는 접점인 만큼,
+                직관적이고 편리한 UI/UX를 통해 가치 있는 경험을 전달하는
+                개발자를 지향합니다.
+              </p>
+              <p class="about-lead">이럴 때 성취감을 느껴요</p>
+              <p class="about-body">
+                팀을 위해 스스로 해야 할 일을 찾아 실행하고, 원활한 소통을 통해
+                실질적인 기여를 해냈을 때 가장 큰 보람을 느낍니다. 함께 목표를
+                이루며 성취를 공유하는 개발자로 성장하고자 합니다.
+              </p>
+            </div>
+
+            <!-- [하단-좌] 내 정보 -->
+            <div class="about-info-card">
+              <ul class="info-list">
+                <li class="info-item">
+                  <span class="info-label">Name</span>
+                  <span class="info-value">임민규 (Mingyu Lim)</span>
+                </li>
+                <li class="info-item">
+                  <span class="info-label">Location</span>
+                  <span class="info-value">서울, 대한민국</span>
+                </li>
+                <li class="info-item">
+                  <span class="info-label">Email</span>
+                  <span class="info-value"
+                    ><a href="mailto:minjun@email.com"
+                      >ddj03104@gmail.com</a
+                    ></span
+                  >
+                </li>
+                <li class="info-item">
+                  <span class="info-label">Education</span>
+                  <span class="info-value"
+                    >한남대학교 컴퓨터통신무인기술학과</span
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- [하단-우] 기술 스택 -->
+            <div class="skills-wrap">
+              <div class="skills-categories">
+                <div class="skill-group">
+                  <p class="skill-group-label">Language</p>
+                  <div class="skill-icons">
+                    <div class="skill-icon-item">
+                      <i class="devicon-html5-plain colored"></i>
+                      <span>HTML5</span>
+                    </div>
+                    <div class="skill-icon-item">
+                      <i class="devicon-css3-plain colored"></i>
+                      <span>CSS3</span>
+                    </div>
+                    <div class="skill-icon-item">
+                      <i class="devicon-javascript-plain colored"></i>
+                      <span>JavaScript</span>
+                    </div>
+                    <div class="skill-icon-item">
+                      <i class="devicon-typescript-plain colored"></i>
+                      <span>TypeScript</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skill-group">
+                  <p class="skill-group-label">Framework / Library</p>
+                  <div class="skill-icons">
+                    <div class="skill-icon-item">
+                      <i class="devicon-react-original colored"></i>
+                      <span>React</span>
+                    </div>
+                    <div class="skill-icon-item">
+                      <img
+                        src="https://skillicons.dev/icons?i=next"
+                        width="25.61px"
+                        height="26x"
+                      />
+                      <span>Next.js</span>
+                    </div>
+
+                    <div class="skill-icon-item">
+                      <i class="devicon-tailwindcss-plain colored"></i>
+                      <span>Tailwind</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skill-group">
+                  <p class="skill-group-label">Tools & Etc.</p>
+                  <div class="skill-icons">
+                    <div class="skill-icon-item">
+                      <i class="devicon-github-plain"></i>
+                      <span>Github</span>
+                    </div>
+                    <div class="skill-icon-item">
+                      <i class="devicon-figma-plain colored"></i>
+                      <span>Figma</span>
+                    </div>
+
+                    <div class="skill-icon-item">
+                      <i class="devicon-vercel-plain"></i>
+                      <span>vercel</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ───────────── CAREER ───────────── -->
+      <section id="career" class="section section-alt">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-num">02</span>
+            <h2 class="section-title">Career</h2>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <div>
+                    <h3 class="timeline-company">대모산개발단</h3>
+                    <p class="timeline-role">Frontend Developer · 인턴</p>
+                  </div>
+                  <span class="timeline-period">2025.10 — 2025.11</span>
+                </div>
+                <ul class="timeline-tasks">
+                  <li>프론트엔드 구현 전반 담당</li>
+                  <li>확장성과 유지보수를 고려한 UI 설계</li>
+                  <li>사용자 ˙ 관리자 페이지를 분리한 화면 구조 구현</li>
+                </ul>
+                <div class="timeline-tags">
+                  <span class="tag">Next.js</span>
+                  <span class="tag">TypeScript</span>
+                  <span class="tag">jotai</span>
+                  <span class="tag">Tailwind CSS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ───────────── PROJECTS ───────────── -->
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-num">03</span>
+            <h2 class="section-title">Projects</h2>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-card-inner">
+                <div class="project-top">
+                  <span class="project-type">Team - FE: 5명</span>
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/nile27/Slid-to-do-Refactoring"
+                      target="_blank"
+                      class="project-link"
+                      aria-label="GitHub"
+                    >
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a
+                      href="https://slid-to-do-refactoring.vercel.app/"
+                      target="_blank"
+                      class="project-link"
+                      aria-label="Live"
+                    >
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                  </div>
+                </div>
+                <h3 class="project-title">Slid to-do</h3>
+                <p class="project-date">2025.07 ~ 2025.08 (6주)</p>
+                <p class="project-desc">
+                  학습·작업 관리를 위한 할 일 + 노트 플랫폼
+                </p>
+                <div class="project-tags">
+                  <span class="tag">NextJS</span>
+                  <span class="tag">TypeScript</span>
+                  <span class="tag">Zustand</span>
+                  <span class="tag">Tailwind CSS</span>
+                  <span class="tag">React-Query</span>
+                  <span class="tag">Framer Motion</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card-inner">
+                <div class="project-top">
+                  <span class="project-type">Personal</span>
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/nile27/CoinBrief"
+                      target="_blank"
+                      class="project-link"
+                      aria-label="GitHub"
+                    >
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a
+                      href="https://coinbrief.vercel.app/"
+                      target="_blank"
+                      class="project-link"
+                      aria-label="Live"
+                    >
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                  </div>
+                </div>
+                <h3 class="project-title">CoinBrief</h3>
+                <p class="project-date">2025.01 ~ 2025.01 (5주)</p>
+                <p class="project-desc">실시간 코인 가격 및 정보 조회 플랫폼</p>
+                <div class="project-tags">
+                  <span class="tag">Next.js</span>
+                  <span class="tag">TypeScript</span>
+                  <span class="tag">Zustand</span>
+                  <span class="tag">Tailwind CSS</span>
+                  <span class="tag">Express.js</span>
+                  <span class="tag">Firebase</span>
+                </div>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-card-inner">
+                <div class="project-top">
+                  <span class="project-type">Team - FE: 3명</span>
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/nile27/Spacspace_AightNow"
+                      target="_blank"
+                      class="project-link"
+                      aria-label="GitHub"
+                    >
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+                <h3 class="project-title">Aight Now</h3>
+                <p class="project-date">2024.06 ~ 2024.08 (5주)</p>
+                <p class="project-desc">AI기반 주식분석플랫폼</p>
+                <div class="project-tags">
+                  <span class="tag">Next.js</span>
+                  <span class="tag">TypeScript</span>
+                  <span class="tag">Zustand</span>
+                  <span class="tag">Tailwind CSS</span>
+                  <span class="tag">Firebase</span>
+                </div>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-card-inner">
+                <div class="project-top">
+                  <span class="project-type">Personal</span>
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/nile27/My-Calender"
+                      target="_blank"
+                      class="project-link"
+                      aria-label="GitHub"
+                    >
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a
+                      href="https://cheery-moonbeam-28829d.netlify.app/"
+                      target="_blank"
+                      class="project-link"
+                      aria-label="Live"
+                    >
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                  </div>
+                </div>
+                <h3 class="project-title">My_Todo_Calendar</h3>
+                <p class="project-date">2024.02 - 2024.03 (5주)</p>
+                <p class="project-desc">시간·월별로 관리하는 Todo 리스트</p>
+                <div class="project-tags">
+                  <span class="tag">React</span>
+                  <span class="tag">TypeScript</span>
+                  <span class="tag"> Redux-toolkit </span>
+                  <span class="tag">Styled-Components</span>
+                  <span class="tag">Axios</span>
+                  <span class="tag">Express.js</span>
+                  <span class="tag">Mongo DB</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ───────────── ACTIVITIES / EXPERIENCE ───────────── -->
+      <section id="activities" class="section section-alt">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-num">04</span>
+            <h2 class="section-title">Experience</h2>
+          </div>
+
+          <div class="activities-list">
+            <div class="activity-item">
+              <div class="activity-left">
+                <span class="activity-period">2025.06 - 2025.08</span>
+                <span class="activity-badge">교육</span>
+              </div>
+              <div class="activity-right">
+                <h3 class="activity-title">코드잇 스프린트</h3>
+                <p class="activity-org">
+                  심화 프론트엔드 엔지니어 부트캠프 - 수료
+                </p>
+                <ul class="activity-ul">
+                  <li class="activity-list">
+                    Next.js 기반 Tailwind CSS 등 프론트엔드 현업에 필요한 심화
+                    기술 강의 수강
+                  </li>
+                  <li class="activity-list">팀 협업 프로젝트</li>
+                </ul>
+              </div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-left">
+                <span class="activity-period">2024.06 - 2024.08</span>
+                <span class="activity-badge">교육</span>
+              </div>
+              <div class="activity-right">
+                <h3 class="activity-title">스나이퍼팩토리</h3>
+                <p class="activity-org">프로젝트 캠프:Next.js 1기 - 수료</p>
+                <ul class="activity-ul">
+                  <li class="activity-list">
+                    Next.js, TypeScript 기반 프론트엔드 과정
+                  </li>
+                  <li class="activity-list">API Routes를 이용한 백엔드 교육</li>
+                  <li class="activity-list">기업 연계 팀 프로젝트</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="activity-item">
+              <div class="activity-left">
+                <span class="activity-period">2022.12 — 2023.06</span>
+                <span class="activity-badge">교육</span>
+              </div>
+              <div class="activity-right">
+                <h3 class="activity-title">코드스테이츠</h3>
+                <p class="activity-org">FrontEnd 과정 - 수료</p>
+                <ul class="activity-ul">
+                  <li class="activity-list">JavaScript 기반 프론트엔드 과정</li>
+                  <li class="activity-list">HTML5 / CSS3를 이용한 웹 개발</li>
+                  <li class="activity-list">React 프레임워크를 통한 웹 개발</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ───────────── AWARDS ───────────── -->
+      <section id="awards" class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-num">05</span>
+            <h2 class="section-title">Awards</h2>
+          </div>
+
+          <div class="awards-grid">
+            <div class="award-card">
+              <div class="award-icon">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <div class="award-content">
+                <h3 class="award-title">장려상</h3>
+                <p class="award-event">컴퓨터공학과 학술제 장려상 2022</p>
+                <ul class="award-ul">
+                  <li class="award-list">1인 가구 원격 IoT 시스템</li>
+                  <li class="award-list">아두이노 개발 담당 및 팀장</li>
+                  <li class="award-list">한남대학교, 컴퓨터 공학과</li>
+                </ul>
+                <span class="award-year">2022</span>
+              </div>
+            </div>
+
+            <div class="award-card">
+              <div class="award-icon">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <div class="award-content">
+                <h3 class="award-title">장려상</h3>
+                <p class="award-event">
+                  산학협력 페스티벌 캡스톤 디자인 경진대회 2019
+                </p>
+
+                <ul class="award-ul">
+                  <li class="award-list">Idea: 물 절약 시스템 플랫폼</li>
+                  <li class="award-list">K-water 산학 협력 캡스톤</li>
+                  <li class="award-list">아두이노, 앱 인벤터 개발 담당</li>
+                  <li class="award-list">
+                    주최, 주관: 한남대학교, 링크 사업단
+                  </li>
+                </ul>
+                <span class="award-year">2022</span>
+              </div>
+            </div>
+
+            <div class="award-card">
+              <div class="award-icon">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <div class="award-content">
+                <h3 class="award-title">최우수상</h3>
+                <p class="award-event">
+                  2019 Hannam Star Venture 상상창업경진대회 최우수상
+                </p>
+                <ul class="award-ul">
+                  <li class="award-list">창업 아이템 아이디어 대회</li>
+                  <li class="award-list">주최, 주관: 한남대학교 창업지원단</li>
+                </ul>
+                <span class="award-year">2019</span>
+              </div>
+            </div>
+
+            <div class="award-card">
+              <div class="award-icon">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <div class="award-content">
+                <h3 class="award-title">장려상</h3>
+                <p class="award-event">
+                  2019 WTA 대전 하이테크 페어 아이디어 공모전 장려상
+                </p>
+                <ul class="award-ul">
+                  <li class="award-list">기술 및 아이디어 병합 대회</li>
+                  <li class="award-list">반려동물 구강 건강 검진 장난감</li>
+                  <li class="award-list">아두이노 개발 담당 및 팀장</li>
+                  <li class="award-list">
+                    주최, 주관: 대전광역시, 세계과학도시연합
+                  </li>
+                </ul>
+                <span class="award-year">2019</span>
+              </div>
+            </div>
+
+            <!-- <div class="award-card">
+              <div class="award-icon">
+                <i class="fa-solid fa-certificate"></i>
+              </div>
+              <div class="award-content">
+                <h3 class="award-title">정보처리기사</h3>
+                <p class="award-event">한국산업인력공단</p>
+                <p class="award-desc">국가공인 정보처리기사 자격증 취득.</p>
+                <span class="award-year">2020</span>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ───────────── FOOTER ───────────── -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <p class="footer-copy">© 2026 Min-Gyu Rim. Designed</p>
+          <div class="footer-links">
+            <a href="#" class="footer-link">GitHub</a>
+            <a href="#" class="footer-link">LinkedIn</a>
+            <a href="mailto:ddj03104@gmail.com" class="footer-link">Email</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
