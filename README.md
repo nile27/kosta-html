@@ -10,7 +10,8 @@
 | 사용 기술 | HTML5, CSS3 |
 | 외부 리소스 | Google Fonts, Font Awesome 6 |
 | 파일 구성 | `index.html`, `style.css` |
-| 임시 배포 | https://bronze-wanda-54.tiiny.site/ |
+| 임시 배포 | <a href="https://bronze-wanda-54.tiiny.site/" target="_blank">https://bronze-wanda-54.tiiny.site/</a> |
+
 
 ### 기획 의도
 
